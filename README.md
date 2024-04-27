@@ -75,6 +75,58 @@ plt.xlabel('x-axis')
 plt.ylabel('y-axis')
 plt.show()
 ```
+### 5.Spline Chart
+```
+from scipy.interpolate import make_interp_spline
+x=np.array([1,2,3,4,5,6,7,8,9,10])
+y=np.array([2,4,5,7,8,8,9,10,11,12])
+spl=make_interp_spline(x,y)
+x1=np.linspace(x.min(),x.max(),100)
+y1=spl(x1)
+plt.plot(x,y,'*',label='data')
+plt.plot(x1,y1,'-',label="spline")
+plt.legend()
+plt.show()
+```
+![5-5](https://github.com/Divya110205/EXNO-5-DS/assets/119404855/052795a4-7ab1-48a3-9e18-16bd30f17142)
+
+### TO VISUALIZE RELATIONSHIPS
+### 1.Bar Chart
+```
+val=[5,6,3,7,2]
+names=["A","B","C","D","E"]
+plt.bar(names,val,color="blue")
+plt.show()
+```
+![5-6](https://github.com/Divya110205/EXNO-5-DS/assets/119404855/39bbd8d3-a82f-49bd-9c8f-13037dfdb978)
+
+### 2.Scatter Plot
+```
+x=[0,1,2,3,4,5]
+y=[0,1,4,9,16,25]
+plt.scatter(x,y,s=30,color="red")
+plt.show()
+```
+![5-7](https://github.com/Divya110205/EXNO-5-DS/assets/119404855/8f67a4bb-03ad-4c64-903c-453ca8760169)
+
+### 3.Bubble Chart
+```
+x = [1, 2, 3, 4, 5]
+y = [10, 15, 20, 25, 30]
+sizes = [100, 200, 300, 400, 500]
+plt.scatter(x, y, s=sizes, alpha=0.5)
+plt.xlabel('x_values')
+plt.ylabel('y_values')
+plt.title('Bubble Chart')
+plt.show()
+```
+![5-8](https://github.com/Divya110205/EXNO-5-DS/assets/119404855/212820b5-2e8e-4796-83ac-7827b2d94c37)
+
+
+
+
+
+
 ![Screenshot 2024-04-25 222900](https://github.com/Yamunaasri/EXNO-5-DS/assets/115707860/676db96f-5e9c-4ee4-a139-d42346831da8)
 ```
 import numpy as np
