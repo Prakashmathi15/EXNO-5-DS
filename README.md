@@ -75,6 +75,8 @@ plt.xlabel('x-axis')
 plt.ylabel('y-axis')
 plt.show()
 ```
+![Screenshot 2024-04-25 222900](https://github.com/Yamunaasri/EXNO-5-DS/assets/115707860/676db96f-5e9c-4ee4-a139-d42346831da8)
+
 ### 5.Spline Chart
 ```
 from scipy.interpolate import make_interp_spline
@@ -123,11 +125,12 @@ plt.show()
 ![5-8](https://github.com/Divya110205/EXNO-5-DS/assets/119404855/212820b5-2e8e-4796-83ac-7827b2d94c37)
 
 
+### TO CAPTURE DISTRIBUTIONS
+### 1.Histogram
 
 
 
 
-![Screenshot 2024-04-25 222900](https://github.com/Yamunaasri/EXNO-5-DS/assets/115707860/676db96f-5e9c-4ee4-a139-d42346831da8)
 ```
 import numpy as np
 import matplotlib.pyplot as plt
@@ -150,6 +153,18 @@ plt.title('histogram')
 plt.show()
 ```
 ![Screenshot 2024-04-25 223015](https://github.com/Yamunaasri/EXNO-5-DS/assets/115707860/5b088d34-b1ee-4b3e-a229-39360d583bf6)
+
+
+```
+val=[5,6,3,7,2]
+names=["A","B","C","D","E"]
+plt.barh(names,val,color="yellowgreen")
+plt.show()
+```
+
+<img width="392" alt="image" src="https://github.com/Prakashmathi15/EXNO-5-DS/assets/118350045/9cb9b6a8-745b-4976-a7d0-c2c64b9e9d8b">
+
+
 ```
 import matplotlib.pyplot as plt
 import numpy as np
@@ -208,6 +223,8 @@ plt.legend()
 plt.show()
 ```
 ![Screenshot 2024-04-25 223241](https://github.com/Yamunaasri/EXNO-5-DS/assets/115707860/ddb35914-91b3-478a-81cf-f76e9cc9c071)
+
+![Screenshot 2024-04-26 222959](https://github.com/RENUGASARAVANAN/EXNO-5-DS/assets/119292258/448d681a-92e7-41a8-8362-91fbbb95eef8)
 
 # Result:
   Thus, We have successfullu performed Data Visualization using matplot python library for the given datas.
