@@ -19,8 +19,8 @@ STEP 5:Include Necessary parameters in each functions.
 
 # Coding and Output:
 ```
-NAME : PRAKASH M
-REG NO : 212222100035
+NAME : YAMUNAASRI T S
+REG NO : 212222240117
 ```
 ```
 import matplotlib.pyplot as plt
@@ -112,6 +112,8 @@ ax.boxplot(data)
 ax.set_xlabel("data")
 ax.set_ylabel("values")
 ax.set_title("box plot")
+```
+![Screenshot 2024-04-25 223203](https://github.com/Yamunaasri/EXNO-5-DS/assets/115707860/4cdf0d14-c240-4e56-9ef1-ed0ac3eef7d2)
 
 ### 3.Violin Plot
 ```
@@ -144,9 +146,6 @@ plt.show()
 
 ![5-12](https://github.com/Divya110205/EXNO-5-DS/assets/119404855/2b218374-d635-4ea6-a5d0-5ffec3052560)
 
-
-```
-![Screenshot 2024-04-25 223203](https://github.com/Yamunaasri/EXNO-5-DS/assets/115707860/4cdf0d14-c240-4e56-9ef1-ed0ac3eef7d2)
 ```
 import matplotlib.pyplot as plt
 activities=['eat','sleep','work','play']
