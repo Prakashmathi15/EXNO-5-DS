@@ -112,6 +112,39 @@ ax.boxplot(data)
 ax.set_xlabel("data")
 ax.set_ylabel("values")
 ax.set_title("box plot")
+
+### 3.Violin Plot
+```
+data = [np.random.normal(loc=0, scale=1, size=100),
+        np.random.normal(loc=2, scale=1, size=100),
+        np.random.normal(loc=1, scale=2, size=100)]
+plt.violinplot(data)
+plt.xlabel('Groups')
+plt.ylabel('Values')
+plt.title('Violin Plot')
+plt.xticks([1, 2, 3], ['Group 1', 'Group 2', 'Group 3'])
+plt.show()
+```
+
+![5-11](https://github.com/Divya110205/EXNO-5-DS/assets/119404855/03740c40-7a6e-4d7c-b6c6-1f2905f036d1)
+
+### 4.Density Chart
+```
+data = np.random.normal(0, 1, 1000)
+plt.hist(data, bins=30, density=True, alpha=0.5)
+plt.title('Density Plot Example')
+plt.xlabel('Values')
+plt.ylabel('Density')
+from scipy.stats import gaussian_kde
+kde = gaussian_kde(data)
+x_vals = np.linspace(min(data), max(data), 1000)
+plt.plot(x_vals, kde(x_vals), 'r')
+plt.show()
+```
+
+![5-12](https://github.com/Divya110205/EXNO-5-DS/assets/119404855/2b218374-d635-4ea6-a5d0-5ffec3052560)
+
+
 ```
 ![Screenshot 2024-04-25 223203](https://github.com/Yamunaasri/EXNO-5-DS/assets/115707860/4cdf0d14-c240-4e56-9ef1-ed0ac3eef7d2)
 ```
